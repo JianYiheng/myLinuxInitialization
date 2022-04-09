@@ -42,7 +42,7 @@ nvim_tree.setup {
     "dashboard",
     "alpha",
   },
-  auto_close = true,
+  -- auto_close = true,
   open_on_tab = false,
   hijack_cursor = false,
   update_cwd = true,
@@ -82,7 +82,6 @@ nvim_tree.setup {
     height = 30,
     hide_root_folder = false,
     side = "left",
-    auto_resize = true,
     mappings = {
       custom_only = false,
       list = {
@@ -109,4 +108,9 @@ nvim_tree.setup {
     folder_arrows = 1,
     tree_width = 30,
   },
+  actions = {
+    open_file = {
+      resize_window = true
+    }
+  }
 }
